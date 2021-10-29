@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T'akuyiri</title>
+  <link rel="icon" href="Imágenes/favicon-16x16.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/39321a7c93.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid">
+    <header class="header">
+      <div id="logo">
+        <img src="https://fontmeme.com/permalink/211021/135f36f3279be173593d0ad59c44d98e.png" alt="fuente-cupola"
+          border="0">
+      </div>
+      <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+        <a class="navbar-brand" href="takuyiri.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="modelos.html">Modelos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tips.html">Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consulta.html">Pedido</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <script src="JS/formulario.js"></script>
+      <h2>Formulario de pedido</h2>
+      <p>Si querés pedirnos tu vela completa el siguiete formulario y nos ponemos en contacto con vos!</p>
+      <form action="mailto:guadacaffaro@gmail.com" method="post" enctype="text/plain" id="form" onsubmit="return validacion()">
+        <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br>
+        <label for="apellido">Apellido:</label> <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"><br>
+        <p><b>Modelo:</b><br>
+          <input type="checkbox" name="modelo" id="volcan" value="volcan">Volcán<br>
+          <input type="checkbox" name="modelo" id="lola" value="lola">Lola<br>
+          <input type="checkbox" name="modelo" id="cristal" value="cristal">Cristal<br>
+          <input type="checkbox" name="modelo" id="honolulu" value="honolulu">Honolulú<br>
+          <input type="checkbox" name="modelo" id="misky" value="misky">Misky<br>
+          <input type="checkbox" name="modelo" id="ceramica" value="ceramica">Ceramica<br>
+        </p>
+        <p><b>Aroma:</b><br>
+          <select id="aroma" name="aroma" class="custom-select">
+            <option selected>Elegí tu aroma</option>
+            <option value="lavanda">Lavanda</option>
+            <option value="rosa">Rosa</option>
+            <option value="jazmin">Jazmín</option>
+            <option value="cocoyvainilla">Coco y Vainilla</option>
+            <option value="frutosrojos">Frutos Rojos</option>
+            <option value="sandia">Sandía</option>
+          </select>
+        </p>
+        <label for="direccion">Dirección:</label> <input type="text" id="direccion" name="direccion"
+          placeholder="Ingrese su dirección, ciudad"><br>
+        <label for="cp">Código postal:</label> <input type="number" id="cp" name="cp" placeholder="4400">
+        <label for="cel">Nro de contacto:</label> <input type="number" id="cel" name="cel"
+          placeholder="3811234567">
+        <p>Medio de pago<br>
+          <input type="radio" name="pago" value="efectivo">Efectivo<br>
+          <input type="radio" name="pago" value="transferencia">Transferencia<br>
+          <input type="radio" name="pago" value="mercadopago">Mercado Pago<br>
+        </p>
+        <textarea name="comentario" rows="5" cols="10" placeholder="Escribe tu comentario..."></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+    <footer class="footer">
+      <a class="redes" href="https://instagram.com/takuyiri.deco?utm_medium=copy_link" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a class="redes" href="https://www.facebook.com/takuyiri.deco" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <p>Derechos reservados 2021</p>
+    </footer>
+  </div>
+</body>
+
+</html>
